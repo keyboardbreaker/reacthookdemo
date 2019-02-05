@@ -5,7 +5,9 @@ export default () => {
   return (
       <div className="App">
         <header className="App-header">
-          <h2>test</h2>
+            <p>Name: <input type="text"></input></p>
+            <p>Age: </p>
+            <button>Increment Age +1</button>
         </header>
       </div>
   );
