@@ -2,10 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 
 const useFetch = url => {
-
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
-
   // similar to componentDidMount
   useEffect(async () => {
     const response = await fetch(url);
@@ -17,6 +15,7 @@ const useFetch = url => {
   return {data, loading};
 }
 export default () => {
+
   const [name, setName] = useState('keyboardbreaker');
   const [age, setAge] = useState(11);
   const {data, loading} = useFetch('https://api.randomuser.me/');
@@ -39,7 +38,7 @@ export default () => {
               <h1 className="heading">Form</h1>
               <div className="form">
                 <p>
-                  <b>Name: </b> 
+                  <b>Name:</b> 
                   <input 
                     type="text" 
                     value={name} 
@@ -50,8 +49,7 @@ export default () => {
                 <button onClick={() => {setAge(age + 1)}}>+ 1</button>
                 <button onClick={() => {setAge(age - 1)}}>- 1</button>
                 </p>
-              </div>
-              
+              </div> 
             </div>
             <div className="column">
               <h1 className="heading">Preview</h1>

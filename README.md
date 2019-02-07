@@ -13,4 +13,5 @@
 
 - [Centering Divs](https://medium.freecodecamp.org/how-to-center-things-with-style-in-css-dc87b7542689)
 
+- [Circular Images](https://css-tricks.com/almanac/properties/b/border-radius/)
 
